@@ -1,0 +1,28 @@
+{
+  "name": "backend-task",
+  "version": "1.0.0",
+  "description": "My attempt on the Backend Task",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "test",
+    "babel-node": "babel-node --presets=env",
+    "start": "nodemon --exec npm run babel-node -- ./server/index.js",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcDalin/Backend-Task.git"
+  },
+  "author": "Dalin Oluoch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcDalin/Backend-Task/issues"
+  },
+  "homepage": "https://github.com/dcDalin/Backend-Task#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.4"
+  }
+}
