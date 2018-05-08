@@ -21,7 +21,7 @@ basicController.login = (req, res) => {
 basicController.profile = (req, res) => {
   res.json({
     status: "ok",
-    message: "Post created"
+    message: "Welcome to your profile"
   });
 };
 

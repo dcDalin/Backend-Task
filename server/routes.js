@@ -10,7 +10,7 @@ const routes = express();
 // Index route
 routes.post("/", basicController.login);
 // Profile route
-routes.post("/profile", basicController.profile);
+routes.get("/profile", basicController.profile);
 
 // Export routes - use it in app
 export default routes;
