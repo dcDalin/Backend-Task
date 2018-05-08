@@ -4,7 +4,7 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-#### Install
+### Install
 
 Clone the repository
 
@@ -24,13 +24,20 @@ Install the dependencies
 $ npm install
 ```
 
-#### Usage
+### Usage
 
 Run the server
 
 ```sh
 $ npm start
 ```
+
+#### API Functionality
+
+| Endpoint     | Functionality                 | HTTP Method |
+| ------------ | ----------------------------- | ----------- |
+| /api/        | Logs in a user                | POST        |
+| /api/profile | User profile. Protected route | GET         |
 
 Run the test suite
 
