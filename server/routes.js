@@ -7,7 +7,10 @@ import basicController from "./controllers/basicControllers";
 const routes = express();
 
 // Routes
-routes.get("/", basicController.get);
+// Index route
+routes.post("/", basicController.login);
+// Profile route
+routes.post("/profile", basicController.profile);
 
 // Export routes - use it in app
 export default routes;

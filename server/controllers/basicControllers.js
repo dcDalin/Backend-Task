@@ -1,10 +1,27 @@
+import jwt from "jsonwebtoken";
+
 // Object to contain all our controllers
 const basicController = {};
 
-// Basic controller
-basicController.get = (req, res) => {
+// Login controller
+basicController.login = (req, res) => {
+  // Mock user
+  const user = {};
+
+  jwt.sign({ user }, "secretkey", (err, token) => {
+    res.json({
+      status: "ok",
+      message: "Successfully logged in",
+      token
+    });
+  });
+};
+
+// Profile Controller
+basicController.profile = (req, res) => {
   res.json({
-    message: "The backend task"
+    status: "ok",
+    message: "Post created"
   });
 };
 
