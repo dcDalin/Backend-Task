@@ -1,3 +1,5 @@
-import test from "./test";
+import app from "./app";
 
-test("BABEL IS WORKING");
+app.listen(3000, () => {
+  console.log("Server running on port 3000...");
+});
